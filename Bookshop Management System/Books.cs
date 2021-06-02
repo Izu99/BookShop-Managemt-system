@@ -20,10 +20,11 @@ namespace Bookshop_Management_System
             loadDatagridView();
         }
 
-        private void loadDatagridView() {
+        private void loadDatagridView()
+        {
             con.Open();
             string query = "select * from BookTbl";
-            SqlDataAdapter sda = new SqlDataAdapter(query,con);
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
@@ -34,7 +35,7 @@ namespace Bookshop_Management_System
         private void Filter()
         {
             con.Open();
-            string query = "select * from BookTbl where BCat = '" + cmbFilterByCatagory.SelectedItem.ToString()+"'";
+            string query = "select * from BookTbl where BCat = '" + cmbFilterByCatagory.SelectedItem.ToString() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -66,13 +67,13 @@ namespace Bookshop_Management_System
                 {
                     MessageBox.Show(ex.Message);
                 }
-            }            
+            }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             cmbFilterByCatagory.SelectedIndex = 6;
-            loadDatagridView();            
+            loadDatagridView();
         }
 
         private void cmbFilterByCatagory_SelectedIndexChanged(object sender, EventArgs e)
@@ -86,7 +87,7 @@ namespace Bookshop_Management_System
             txtAuthor.Text = "";
             cmbCatagories.SelectedIndex = 6;
             txtQuantity.Text = "";
-            txtPrice.Text = "";     
+            txtPrice.Text = "";
         }
         private void btnReset_Click(object sender, EventArgs e)
         {
@@ -165,7 +166,28 @@ namespace Bookshop_Management_System
                 {
                     MessageBox.Show(ex.Message);
                 }
-            }            
+            }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            Users obj = new Users();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard obj = new Dashboard();
+            obj.Show();
+            this.Hide();
         }
     }
 }

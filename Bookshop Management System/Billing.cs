@@ -108,6 +108,7 @@ namespace Bookshop_Management_System
             txtQuantity.Text = "";
             txtClientName.Text = "";
             txtPrice.Text = "";
+            lblPrice.Text = "";
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -117,13 +118,50 @@ namespace Bookshop_Management_System
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 285, 600);
-            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            if (txtClientName.Text == "" || txtBookName.Text == "")
             {
-                printDocument1.Print();
+                MessageBox.Show("Select Client Name");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "insert into BillTbl values('" + lblUserName.Text + "','" + txtClientName.Text + "','" + gridTotal + "')";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Book Saved Successfully");
+                    con.Close();
+                    reset();   
+                    loadDatagridView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+                printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 300, 600);
+                if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    printDocument1.Print();
+
+                }                
             }
         }
         int prodid, prodqty, prodprice, tottal, pos = 60;
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Billing_Load(object sender, EventArgs e)
+        {
+            lblUserName.Text = Login.UserName;
+        }
+
         string prodname;
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
@@ -141,19 +179,15 @@ namespace Bookshop_Management_System
                 e.Graphics.DrawString("" + prodname, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(45, pos));
                 e.Graphics.DrawString("" + prodprice, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(120, pos));
                 e.Graphics.DrawString("" + prodqty, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(170, pos));
-                e.Graphics.DrawString("" + tottal, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(235, pos)); 
-            pos = pos + 20;
-        }
-            e.Graphics.DrawString("Grand Total : Rs" + gridTotal, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Chartreuse, new Point(60, pos+50));
-            e.Graphics.DrawString("***********Book Store************" , new Font("Century Gothic", 10, FontStyle.Bold), Brushes.Chartreuse, new Point(60, pos+85));
+                e.Graphics.DrawString("" + tottal, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(235, pos));
+                pos = pos + 20;
+            }
+            e.Graphics.DrawString("Grand Total : Rs" + gridTotal, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Chartreuse, new Point(60, pos + 50));
+            e.Graphics.DrawString("***********Book Store************", new Font("Century Gothic", 10, FontStyle.Bold), Brushes.Chartreuse, new Point(60, pos + 85));
             dgvBill.Rows.Clear();
             dgvBill.Refresh();
             pos = 100;
             gridTotal = 0;
-
-    
         }
-
-
     }
 }

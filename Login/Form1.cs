@@ -15,21 +15,21 @@ namespace Bookshop_Management_System
     {
         public Login()
         {
-            InitializeComponent();
+          //  InitializeComponent();
         }
         SqlConnection con = new SqlConnection(@"Data Source=ISURU;Initial Catalog=bookShopDB;Integrated Security=True");
         public static string UserName;
         private void btnLogin_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from UserTbl where UName ='" + txtUserName.Text + "'and UPass = '" + txtPassword.Text + "'", con);
+          //  SqlDataAdapter sda = new SqlDataAdapter("select count(*) from UserTbl where UName ='" + txtUserName.Text + "'and UPass = '" + txtPassword.Text + "'", con);
             DataTable dt = new DataTable();
-            sda.Fill(dt);
+           // sda.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")
             {
-                Billing obj = new Billing();
-                UserName = txtUserName.Text;
-                obj.Show();
+              //  Billing obj = new Billing();
+              //  UserName = txtUserName.Text;
+             //   obj.Show();
                 this.Hide();
                 con.Close();
             }
@@ -39,11 +39,13 @@ namespace Bookshop_Management_System
             }
         }
 
-        private void lblAdmin_Click(object sender, EventArgs e)
+
+        private void lblLogin_Click(object sender, EventArgs e)
         {
-            AdminLogin obj = new AdminLogin();
-            obj.Show();
-            this.Hide();
+            /*   AdminLogin obj = new AdminLogin();
+               obj.Show();
+               this.Hide();*/
+
         }
     }
 }

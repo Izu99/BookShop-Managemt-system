@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bookshop_Management_System
+namespace Login
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Bookshop_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Splash());
+            Application.Run(new Form1());
         }
     }
 }

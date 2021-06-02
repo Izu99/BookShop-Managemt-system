@@ -31,12 +31,12 @@ namespace Bookshop_Management_System
             sda.Fill(ds);
             dgvUserList.DataSource = ds.Tables[0];
             con.Close();
-        }        
+        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-            if (txtUserName.Text == "" || txtPhone.Text == "" ||  txtAddress.Text == "" || txtPassword.Text == "")
+            if (txtUserName.Text == "" || txtPhone.Text == "" || txtAddress.Text == "" || txtPassword.Text == "")
             {
 
                 MessageBox.Show("Missing Information");
@@ -64,7 +64,7 @@ namespace Bookshop_Management_System
         private void reset()
         {
             txtUserName.Text = "";
-            txtPhone.Text = "";           
+            txtPhone.Text = "";
             txtAddress.Text = "";
             txtPassword.Text = "";
         }
@@ -145,6 +145,27 @@ namespace Bookshop_Management_System
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void btnBooks_Click(object sender, EventArgs e)
+        {
+            Books obj = new Books();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard obj = new Dashboard();
+            obj.Show();
+            this.Hide();
         }
     }
 }
