@@ -28,7 +28,6 @@ namespace Bookshop_Management_System
                 Login log = new Login();
                 log.Show();
                 this.Hide();
-
             }
         }
 
