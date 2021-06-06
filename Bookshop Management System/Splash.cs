@@ -30,21 +30,12 @@ namespace Bookshop_Management_System
                 this.Hide();
             }
         }
+        
 
         private void Splash_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            timer2.Start();
         }
-        int starpos1 = 0;
-        private void timer2_Tick(object sender, EventArgs e)
-        {            
-            starpos1 += 1;
-            guna2CircleProgressBar1.Value = starpos1;
-            if (guna2CircleProgressBar1.Value == 100)
-            {
-               
-            }
-        }
+        
     }
 }

@@ -38,6 +38,13 @@ namespace Bookshop_Management_System
                 MessageBox.Show("Wrong Password");
             }
         }
+        
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            AdminLogin obj = new AdminLogin();
+            obj.Show();
+            this.Hide();
+        }
 
         private void lblAdmin_Click(object sender, EventArgs e)
         {

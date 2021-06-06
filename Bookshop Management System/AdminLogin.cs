@@ -31,7 +31,7 @@ namespace Bookshop_Management_System
             }
         }
 
-        private void lblCancel_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             Login obj = new Login();
             obj.Show();
