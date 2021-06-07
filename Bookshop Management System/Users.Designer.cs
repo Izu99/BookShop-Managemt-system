@@ -29,16 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnLogout = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnBooks = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -58,112 +52,17 @@
             this.btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.topControl = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2CustomGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnUsers = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnBooks = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserList)).BeginInit();
+            this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLogout.CheckedState.Parent = this.btnLogout;
-            this.btnLogout.CustomImages.Parent = this.btnLogout;
-            this.btnLogout.FillColor = System.Drawing.Color.Blue;
-            this.btnLogout.FillColor2 = System.Drawing.Color.Black;
-            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.HoverState.Parent = this.btnLogout;
-            this.btnLogout.Location = new System.Drawing.Point(0, 230);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
-            this.btnLogout.Size = new System.Drawing.Size(259, 46);
-            this.btnLogout.TabIndex = 3;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.SystemColors.Control;
-            this.btnDashboard.CheckedState.Parent = this.btnDashboard;
-            this.btnDashboard.CustomImages.Parent = this.btnDashboard;
-            this.btnDashboard.FillColor = System.Drawing.Color.Blue;
-            this.btnDashboard.FillColor2 = System.Drawing.Color.Black;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.HoverState.Parent = this.btnDashboard;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 184);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
-            this.btnDashboard.Size = new System.Drawing.Size(259, 46);
-            this.btnDashboard.TabIndex = 3;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // btnBooks
-            // 
-            this.btnBooks.BackColor = System.Drawing.SystemColors.Control;
-            this.btnBooks.CheckedState.Parent = this.btnBooks;
-            this.btnBooks.CustomImages.Parent = this.btnBooks;
-            this.btnBooks.FillColor = System.Drawing.Color.Blue;
-            this.btnBooks.FillColor2 = System.Drawing.Color.Black;
-            this.btnBooks.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBooks.ForeColor = System.Drawing.Color.White;
-            this.btnBooks.HoverState.Parent = this.btnBooks;
-            this.btnBooks.Location = new System.Drawing.Point(0, 92);
-            this.btnBooks.Name = "btnBooks";
-            this.btnBooks.ShadowDecoration.Parent = this.btnBooks;
-            this.btnBooks.Size = new System.Drawing.Size(259, 46);
-            this.btnBooks.TabIndex = 3;
-            this.btnBooks.Text = "Books";
-            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
-            // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.btnLogout);
-            this.guna2CustomGradientPanel1.Controls.Add(this.btnDashboard);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientButton3);
-            this.guna2CustomGradientPanel1.Controls.Add(this.btnBooks);
-            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Gray;
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(259, 586);
-            this.guna2CustomGradientPanel1.TabIndex = 4;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 16;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
-            // 
-            // guna2GradientButton3
-            // 
-            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Aqua;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Aqua;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(0, 138);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Size = new System.Drawing.Size(259, 46);
-            this.guna2GradientButton3.TabIndex = 3;
-            this.guna2GradientButton3.Text = "Users";
             // 
             // guna2CustomGradientPanel3
             // 
@@ -185,10 +84,10 @@
             this.guna2CustomGradientPanel3.Controls.Add(this.btnEdit);
             this.guna2CustomGradientPanel3.Controls.Add(this.topControl);
             this.guna2CustomGradientPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel3.FillColor2 = System.Drawing.Color.DarkBlue;
-            this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.Fuchsia;
-            this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.Black;
+            this.guna2CustomGradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.guna2CustomGradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.guna2CustomGradientPanel3.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
             this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(259, 0);
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             this.guna2CustomGradientPanel3.ShadowDecoration.Parent = this.guna2CustomGradientPanel3;
@@ -444,7 +343,7 @@
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.BorderRadius = 20;
+            this.btnReset.BorderRadius = 18;
             this.btnReset.CheckedState.Parent = this.btnReset;
             this.btnReset.CustomImages.Parent = this.btnReset;
             this.btnReset.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -455,7 +354,7 @@
             this.btnReset.Location = new System.Drawing.Point(587, 213);
             this.btnReset.Name = "btnReset";
             this.btnReset.ShadowDecoration.Parent = this.btnReset;
-            this.btnReset.Size = new System.Drawing.Size(145, 40);
+            this.btnReset.Size = new System.Drawing.Size(140, 35);
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "Reset";
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -463,7 +362,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BorderRadius = 20;
+            this.btnSave.BorderRadius = 18;
             this.btnSave.CheckedState.Parent = this.btnSave;
             this.btnSave.CustomImages.Parent = this.btnSave;
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -474,7 +373,7 @@
             this.btnSave.Location = new System.Drawing.Point(81, 213);
             this.btnSave.Name = "btnSave";
             this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(145, 40);
+            this.btnSave.Size = new System.Drawing.Size(140, 35);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -482,7 +381,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.BorderRadius = 20;
+            this.btnDelete.BorderRadius = 18;
             this.btnDelete.CheckedState.Parent = this.btnDelete;
             this.btnDelete.CustomImages.Parent = this.btnDelete;
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -493,7 +392,7 @@
             this.btnDelete.Location = new System.Drawing.Point(417, 212);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
-            this.btnDelete.Size = new System.Drawing.Size(145, 40);
+            this.btnDelete.Size = new System.Drawing.Size(140, 35);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -501,7 +400,7 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.Transparent;
-            this.btnEdit.BorderRadius = 20;
+            this.btnEdit.BorderRadius = 18;
             this.btnEdit.CheckedState.Parent = this.btnEdit;
             this.btnEdit.CustomImages.Parent = this.btnEdit;
             this.btnEdit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -512,7 +411,7 @@
             this.btnEdit.Location = new System.Drawing.Point(254, 213);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
-            this.btnEdit.Size = new System.Drawing.Size(145, 40);
+            this.btnEdit.Size = new System.Drawing.Size(140, 35);
             this.btnEdit.TabIndex = 3;
             this.btnEdit.Text = "Edit";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -520,10 +419,10 @@
             // topControl
             // 
             this.topControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topControl.FillColor = System.Drawing.Color.Fuchsia;
-            this.topControl.FillColor2 = System.Drawing.Color.Black;
-            this.topControl.FillColor3 = System.Drawing.Color.Black;
-            this.topControl.FillColor4 = System.Drawing.Color.Fuchsia;
+            this.topControl.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.topControl.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.topControl.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.topControl.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
             this.topControl.Location = new System.Drawing.Point(0, 0);
             this.topControl.Name = "topControl";
             this.topControl.ShadowDecoration.Parent = this.topControl;
@@ -535,33 +434,147 @@
             this.guna2DragControl1.ContainerControl = this;
             this.guna2DragControl1.TargetControl = this.topControl;
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnLogout);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnDashboard);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnUsers);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnBooks);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox2);
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(259, 586);
+            this.guna2CustomGradientPanel1.TabIndex = 16;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BorderColor = System.Drawing.Color.DarkBlue;
+            this.btnLogout.BorderThickness = 1;
+            this.btnLogout.CheckedState.Parent = this.btnLogout;
+            this.btnLogout.CustomImages.Parent = this.btnLogout;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnLogout.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.Gray;
+            this.btnLogout.HoverState.Parent = this.btnLogout;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLogout.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnLogout.Location = new System.Drawing.Point(0, 540);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.ShadowDecoration.Parent = this.btnLogout;
+            this.btnLogout.Size = new System.Drawing.Size(259, 46);
+            this.btnLogout.TabIndex = 16;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BorderColor = System.Drawing.Color.DarkBlue;
+            this.btnDashboard.BorderThickness = 1;
+            this.btnDashboard.CheckedState.Parent = this.btnDashboard;
+            this.btnDashboard.CustomImages.Parent = this.btnDashboard;
+            this.btnDashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnDashboard.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.Gray;
+            this.btnDashboard.HoverState.Parent = this.btnDashboard;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDashboard.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnDashboard.Location = new System.Drawing.Point(3, 193);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
+            this.btnDashboard.Size = new System.Drawing.Size(259, 46);
+            this.btnDashboard.TabIndex = 17;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // btnUsers
+            // 
+            this.btnUsers.BorderColor = System.Drawing.Color.DarkBlue;
+            this.btnUsers.BorderThickness = 1;
+            this.btnUsers.CheckedState.Parent = this.btnUsers;
+            this.btnUsers.CustomImages.Parent = this.btnUsers;
+            this.btnUsers.FillColor = System.Drawing.Color.Black;
+            this.btnUsers.FillColor2 = System.Drawing.Color.Black;
+            this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.ForeColor = System.Drawing.Color.Cyan;
+            this.btnUsers.HoverState.Parent = this.btnUsers;
+            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
+            this.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUsers.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnUsers.Location = new System.Drawing.Point(3, 148);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.ShadowDecoration.Parent = this.btnUsers;
+            this.btnUsers.Size = new System.Drawing.Size(259, 46);
+            this.btnUsers.TabIndex = 18;
+            this.btnUsers.Text = "Users";
+            // 
+            // btnBooks
+            // 
+            this.btnBooks.BorderColor = System.Drawing.Color.DarkBlue;
+            this.btnBooks.BorderThickness = 1;
+            this.btnBooks.CheckedState.Parent = this.btnBooks;
+            this.btnBooks.CustomImages.Parent = this.btnBooks;
+            this.btnBooks.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnBooks.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnBooks.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooks.ForeColor = System.Drawing.Color.Gray;
+            this.btnBooks.HoverState.Parent = this.btnBooks;
+            this.btnBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnBooks.Image")));
+            this.btnBooks.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBooks.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnBooks.Location = new System.Drawing.Point(3, 100);
+            this.btnBooks.Name = "btnBooks";
+            this.btnBooks.ShadowDecoration.Parent = this.btnBooks;
+            this.btnBooks.Size = new System.Drawing.Size(259, 46);
+            this.btnBooks.TabIndex = 19;
+            this.btnBooks.Text = "Books";
+            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 15;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1191, 586);
-            this.Controls.Add(this.guna2CustomGradientPanel3);
             this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.Controls.Add(this.guna2CustomGradientPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Users";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Users";
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2CustomGradientPanel3.ResumeLayout(false);
             this.guna2CustomGradientPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserList)).EndInit();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2GradientButton btnLogout;
-        private Guna.UI2.WinForms.Guna2GradientButton btnDashboard;
-        private Guna.UI2.WinForms.Guna2GradientButton btnBooks;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2DataGridView dgvUserList;
@@ -579,8 +592,13 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnDelete;
         private Guna.UI2.WinForms.Guna2GradientButton btnEdit;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel topControl;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnLogout;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDashboard;
+        private Guna.UI2.WinForms.Guna2GradientButton btnUsers;
+        private Guna.UI2.WinForms.Guna2GradientButton btnBooks;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

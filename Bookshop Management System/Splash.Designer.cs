@@ -47,7 +47,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(166, 49);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(356, 35);
@@ -71,7 +71,7 @@
             // 
             this.Percentagelbl.BackColor = System.Drawing.Color.Transparent;
             this.Percentagelbl.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Percentagelbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Percentagelbl.ForeColor = System.Drawing.Color.Fuchsia;
             this.Percentagelbl.Location = new System.Drawing.Point(128, 292);
             this.Percentagelbl.Name = "Percentagelbl";
             this.Percentagelbl.Size = new System.Drawing.Size(17, 25);
@@ -86,7 +86,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Fuchsia;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(21, 292);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(78, 25);
@@ -95,13 +95,15 @@
             // 
             // MyProgress
             // 
+            this.MyProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
             this.MyProgress.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.MyProgress.FillColor = System.Drawing.Color.Transparent;
+            this.MyProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.MyProgress.ForeColor = System.Drawing.Color.White;
             this.MyProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.MyProgress.Location = new System.Drawing.Point(0, 335);
             this.MyProgress.Name = "MyProgress";
-            this.MyProgress.ProgressColor = System.Drawing.Color.Fuchsia;
-            this.MyProgress.ProgressColor2 = System.Drawing.Color.Purple;
+            this.MyProgress.ProgressColor = System.Drawing.Color.Navy;
+            this.MyProgress.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.MyProgress.ShadowDecoration.Parent = this.MyProgress;
             this.MyProgress.Size = new System.Drawing.Size(620, 15);
             this.MyProgress.TabIndex = 2;
@@ -109,7 +111,7 @@
             // 
             // guna2GradientPanel1
             // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
             this.guna2GradientPanel1.BorderRadius = 10;
             this.guna2GradientPanel1.BorderThickness = 2;
             this.guna2GradientPanel1.Controls.Add(this.topControl);
@@ -117,6 +119,7 @@
             this.guna2GradientPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2GradientPanel1.Controls.Add(this.Percentagelbl);
+            this.guna2GradientPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
@@ -125,11 +128,12 @@
             // 
             // topControl
             // 
+            this.topControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
             this.topControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topControl.FillColor = System.Drawing.Color.Black;
-            this.topControl.FillColor2 = System.Drawing.Color.Black;
-            this.topControl.FillColor3 = System.Drawing.Color.Black;
-            this.topControl.FillColor4 = System.Drawing.Color.Black;
+            this.topControl.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.topControl.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.topControl.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.topControl.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
             this.topControl.Location = new System.Drawing.Point(0, 0);
             this.topControl.Name = "topControl";
             this.topControl.ShadowDecoration.Parent = this.topControl;
